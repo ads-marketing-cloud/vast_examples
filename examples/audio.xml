@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VAST xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="vast.xsd" version="4.0">
+    <Ad id="1234568769" adType="audio">
+        <InLine>
+            <AdSystem>GDFP</AdSystem>
+            <AdTitle>Audio_Example_VAST4_Nr_1</AdTitle>
+            <Description><![CDATA[Audio_Example_VAST4_Nr_1]]></Description>
+            <Error><![CDATA[https://example.com]]></Error>
+            <Impression><![CDATA[https://example.com]]></Impression>
+            <Creatives>
+                <Creative id="123" AdID="123" sequence="1">
+                    <UniversalAdId idRegistry="example" idValue="123">123</UniversalAdId>
+                    <Linear>
+                        <Duration>00:00:30</Duration>
+                        <TrackingEvents>
+                            <Tracking event="start"><![CDATA[https://example.com]]></Tracking>
+                            <Tracking event="start"><![CDATA[https://example.com]]></Tracking>
+                            <Tracking event="firstQuartile"><![CDATA[https://example.com]]></Tracking>
+                            <Tracking event="midpoint"><![CDATA[https://example.com]]></Tracking>
+                            <Tracking event="thirdQuartile"><![CDATA[https://example.com]]></Tracking>
+                            <Tracking event="complete"><![CDATA[https://example.com]]></Tracking>
+                            <Tracking event="mute"><![CDATA[https://example.com]]></Tracking>
+                            <Tracking event="unmute"><![CDATA[https://example.com]]></Tracking>
+                        </TrackingEvents>
+                        <MediaFiles>
+                            <MediaFile id="GDFP" delivery="progressive" width="1" height="1" type="audio/mpeg" bitrate="64" scalable="true" maintainAspectRatio="true"><![CDATA[https://example.com/1]]></MediaFile>
+                            <MediaFile id="GDFP" delivery="progressive" width="1" height="1" type="audio/mpeg" bitrate="128" scalable="true" maintainAspectRatio="true"><![CDATA[https://example.com/2]]></MediaFile>
+                            <MediaFile id="GDFP" delivery="progressive" width="1" height="1" type="audio/mpeg" bitrate="320" scalable="true" maintainAspectRatio="true"><![CDATA[https://example.com/3]]></MediaFile>
+                            <MediaFile id="GDFP" delivery="progressive" width="1" height="1" type="audio/mp4" bitrate="97" scalable="true" maintainAspectRatio="true"><![CDATA[https://example.com/4]]></MediaFile>
+                            <MediaFile id="GDFP" delivery="progressive" width="1" height="1" type="audio/mp4" bitrate="129" scalable="true" maintainAspectRatio="true"><![CDATA[https://example.com/5]]></MediaFile>
+                            <MediaFile id="GDFP" delivery="progressive" width="1" height="1" type="audio/mp4" bitrate="321" scalable="true" maintainAspectRatio="true"><![CDATA[https://example.com/6]]></MediaFile>
+                        </MediaFiles>
+                    </Linear>
+                </Creative>
+            </Creatives>
+            <Extensions><Extension type="waterfall" fallback_index="0"/><Extension type="geo"><Country>CH</Country><Bandwidth>4</Bandwidth><BandwidthKbps>12500</BandwidthKbps></Extension><Extension type="metrics"><FeEventId>123</FeEventId><AdEventId>123</AdEventId></Extension><Extension type="ShowAdTracking"><CustomTracking><Tracking event="show_ad"><![CDATA[https://example.com]]></Tracking></CustomTracking></Extension><Extension type="video_ad_loaded"><CustomTracking><Tracking event="loaded"><![CDATA[https://example.com]]></Tracking></CustomTracking></Extension><Extension type="heavy_ad_intervention"><CustomTracking><Tracking event="heavy_ad_intervention_cpu"><![CDATA[https://example.com]]></Tracking><Tracking event="heavy_ad_intervention_network"><![CDATA[https://example.com]]></Tracking></CustomTracking></Extension></Extensions>
+        </InLine>
+    </Ad>
+</VAST>
